@@ -1,4 +1,4 @@
-package nacos.conf.config;
+package com.nacos.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
