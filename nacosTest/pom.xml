@@ -33,11 +33,6 @@
             <version>2.2.5.RELEASE</version>
         </dependency>
 
-        <dependency>
-            <groupId>com.alibaba.boot</groupId>
-            <artifactId>nacos-config-spring-boot-starter</artifactId>
-            <version>0.2.7</version>
-        </dependency>
 
         <dependency>
             <groupId>org.apache.commons</groupId>
@@ -45,12 +40,6 @@
             <version>3.9</version>
         </dependency>
 
-<!--        动态从nacos获取配置-->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-bootstrap</artifactId>
-            <version>3.0.3</version>
-        </dependency>
 
 
         <dependency>

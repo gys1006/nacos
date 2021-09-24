@@ -9,10 +9,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RefreshScope
 public class test {
 
 
-    @Value("${db.host:host}")
+    @Value("${db.host}")
+//    @NacosValue(value = "${db.host:test}", autoRefreshed = true)    通过这种方式可以获取到数据 但是不能进行赋值 TODO
     private String useLocalCache;
 
    /* public void setUseLocalCache(String useLocalCache) {
