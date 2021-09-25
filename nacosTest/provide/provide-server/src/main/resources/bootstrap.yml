@@ -15,7 +15,18 @@ spring:
         namespace: 24e635d2-0916-4c0b-9995-5f4c77efa886
         group: DEFAULT_GROUP
 
-
+dubbo:
+  scan:
+    base-package: com.nacos     #duboo扫描的包 标记@server的服务
+  protocol:
+    name: dubbo    #协议的名称  还有rmi
+    port: 8015
+  registry:
+    address: nacos://localhost:8848
+  application:
+    qos-enable: false   #dubbo运维服务是否开启
+  conmuser:
+    check: false        #启动时检查依赖的服务
 
 
 

@@ -1,13 +1,12 @@
-package com.nacos;
+package com.application;
 
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @SpringBootApplication
-@EnableDiscoveryClient
-public class SpringApplicationProvideNacos {
+//@EnableDiscoveryClient
+public class SpringApplication {
     public static void main(String[] args) {
-        SpringApplication.run(SpringApplicationProvideNacos.class, args);
+        org.springframework.boot.SpringApplication.run(SpringApplication.class, args);
     }
 }
