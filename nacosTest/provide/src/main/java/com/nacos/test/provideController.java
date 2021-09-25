@@ -20,10 +20,10 @@ public class provideController {
    /* public void setUseLocalCache(String useLocalCache) {
         this.useLocalCache = useLocalCache;
     }*/
-    @GetMapping("test")
+    @GetMapping("provideTest")
     @ResponseBody
     public String get(){
         System.out.println(useLocalCache);
-        return "provideNacos";
+        return "provideTest |" + useLocalCache;
     }
 }
