@@ -3,17 +3,31 @@ server:
 
 spring:
   application:
-    name: application
+    name: application-server
   cloud:
     nacos:
       config:
         file-extension: properties
         server-addr: 127.0.0.1:8848
-        namespace: 24e635d2-0916-4c0b-9995-5f4c77efa886
+#        namespace: 24e635d2-0916-4c0b-9995-5f4c77efa886
         group: DEFAULT_GROUP
       discovery:
-        namespace: 24e635d2-0916-4c0b-9995-5f4c77efa886
+#        namespace: 24e635d2-0916-4c0b-9995-5f4c77efa886
         group: DEFAULT_GROUP
+
+
+dubbo:
+  scan:
+    base-package: com.application     #duboo扫描的包 标记@server的服务
+  protocol:
+    name: dubbo    #协议的名称  还有rmi
+    port: 8035
+  registry:
+    address: nacos://localhost:8848
+  application:
+    qos-enable: false   #dubbo运维服务是否开启
+  conmuser:
+    check: false        #启动时检查依赖的服务
 
 
 

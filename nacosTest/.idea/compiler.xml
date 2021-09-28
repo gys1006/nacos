@@ -6,12 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="provide-server" />
         <module name="application" />
-        <module name="gateWay" />
         <module name="consume-api" />
         <module name="consume-server" />
+        <module name="gateWay" />
         <module name="provide-api" />
+        <module name="provide-server" />
+        <module name="rocketMqTest" />
       </profile>
     </annotationProcessing>
   </component>
